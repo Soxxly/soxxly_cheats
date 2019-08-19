@@ -1,0 +1,190 @@
+# Infertile
+soxxly_infertile = {
+    # general options
+    customizer = no
+    random = no
+    cached = yes
+
+    # inheritance chance and birth distribution
+    inherit_chance = 0
+    both_parent_has_trait_inherit_chance = 0
+    birth = 0
+
+    # character modifiers
+    fertility = -2.0
+}
+
+# Psychopath
+soxxly_psycho {
+    # general options
+    customizer = yes
+    random = yes
+
+    # inheritance chance and birth distribution
+    inherit_chance = 20
+    both_parent_has_trait_inherit_chance = 50
+    birth = 100
+
+    # intrigue modifiers
+    arrest_chance_modifier = 0.05
+    assassinate_chance_modifier = 0.10
+    plot_power_modifier = 0.10
+    murder_plot_power_modifier = 0.05
+    plot_discovery_chance = 0.10
+
+    # opposites and opposite opinion
+    opposites =  {
+        soxxly_esteemed
+        soxxly_beloved
+        soxxly_blessed
+    }
+
+    # opinion modifiers
+    vassal_opinion = 45
+    dynasty_opinion = -5
+    spouse_opinion = -20
+    same_religion_opinion = -10
+
+    # special modifiers
+    combat_rating = 2
+    threat_decay_speed = 0.02
+    monthly_character_wealth = 1.0
+
+    # AI modifiers
+    ai_rationality = -25
+    ai_zeal = -25
+    ai_honor = -50
+    ai_greed = 50
+    ai_ambition = 50
+}
+
+# Beloved
+soxxly_beloved {
+    # general options
+    customizer = no
+    random = no
+    is_good = yes
+
+    # inheritance chance and birth distribution
+    inherit_chance = 20
+    both_parent_has_trait_inherit_chance = 50
+    birth = 100
+
+    # opposites and opposite opinion
+    opposites =  {
+        soxxly_psycho
+        soxxly_esteemed
+    }
+
+    # opinion modifiers
+    general_opinion = 25
+    spouse_opinion = 50
+
+    # special modifiers
+    global_tax_modifier = 0.01
+    stewardship = 10
+    intrigue = 5
+    diplomacy = 5
+    learning = 5
+    martial = 5
+    local_build_time_modifier = -0.05
+    local_build_cost_modifier = -0.05
+    tech_growth_modifier = 0.35
+
+    # AI modifiers
+    ai_rationality = 15
+    ai_honor = 10
+}
+
+# Esteemed
+soxxly_esteemed {
+    # general options
+    customizer = yes
+    random = yes
+    is_good = yes
+
+    # inheritance chance and birth distribution
+    inherit_chance = 20
+    both_parent_has_trait_inherit_chance = 100
+    birth = 100
+
+    # opposites and opposite opinion
+    opposites =  {
+        soxxly_psycho
+        soxxly_beloved
+    }
+
+    # opinion modifiers
+    general_opinion = 15
+    vassal_opinion = 45
+
+    # special modifiers
+    global_tax_modifier = 0.2
+    stewardship = 75
+    intrigue = 20
+    diplomacy = 10
+    learning = 10
+
+    # special modifiers
+    levy_size = 0.2
+    land_morale = 0.2
+    land_organisation = 0.2
+    siege_speed = 0.15
+    local_build_time_modifier = -0.15
+    local_build_cost_modifier = -0.15
+
+    # monthly bonuses
+    monthly_character_prestige = 3
+    monthly_character_wealth = 4
+
+    # AI modifiers
+    ai_rationality = 35
+    ai_zeal = -10
+    ai_honor = 35
+    ai_greed = -20
+    ai_ambition = 20
+}
+
+soxxly_blessed {
+    # general options
+    customizer = yes
+    random = yes
+    is_good = yes
+
+    # inheritance chance and birth distribution
+    inherit_chance = 20
+    both_parent_has_trait_inherit_chance = 50
+    birth = 100
+
+    # opposites and opposite opinion
+    opposites =  { soxxly_psycho }
+    opposite_opinion = -25
+
+    # opinion modifiers
+    general_opinion = 25
+    same_religion_opinion = 35
+    liege_opinion = 20
+
+    # special modifiers
+    global_tax_modifier = 0.05
+    tech_growth_modifier = 0.15
+    tech_growth_modifier_cultural = 0.15
+    global_revolt_risk = -0.05
+    learning = 50
+    diplomacy = 50
+    threat_decay_speed = -0.05
+
+    # special modifiers
+    local_build_time_modifier = -0.10
+    local_build_cost_modifier = -0.10
+
+    # monthly bonuses
+    monthly_character_piety = 3.5
+
+    # ai
+    ai_rationality = 40
+    ai_zeal = 55
+    ai_greed = -60
+    ai_honor = 40
+    ai_ambition = -50
+}

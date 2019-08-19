@@ -1,0 +1,101 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_trait_soxxly_blessed"
+        texturefile = "gfx/traits/blessed_ancestor.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_trait_soxxly_infertile"
+        texturefile = "gfx/traits/infertile.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_trait_soxxly_esteemed"
+        texturefile = "gfx/traits/esteemed.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_trait_soxxly_beloved"
+        texturefile = "gfx/traits/beloved.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_trait_soxxly_psycho"
+        texturefile = "gfx/traits/psychopath.dds"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_upgrade_to_feudal"
+        texturefile = "gfx\\interface\\convert.dds"
+    }
+    spriteType = {
+        name = "GFX_receive_investment"
+        texturefile = "gfx\\interface\\exchange.dds"
+    }
+    spriteType = {
+        name = "GFX_refresh_government"
+        texturefile = "gfx\\interface\\convert.dds"
+    }
+    spriteType = {
+        name = "GFX_convert_realm"
+        texturefile = "gfx\\interface\\convert.dds"
+    }
+    spriteType = {
+        name = "GFX_piety_for_gold"
+        texturefile = "gfx\\interface\\exchange.dds"
+    }
+    spriteType = {
+        name = "GFX_prestige_for_gold"
+        texturefile = "gfx\\interface\\exchange.dds"
+    }
+    spriteType = {
+        name = "GFX_gold_for_piety"
+        texturefile = "gfx\\interface\\exchange.dds"
+    }
+    spriteType = {
+        name = "GFX_gold_for_prestige"
+        texturefile = "gfx\\interface\\exchange.dds"
+    }
+    spriteType = {
+        name = "GFX_gold_for_society"
+        texturefile = "gfx\\interface\\exchange.dds"
+    }
+    spriteType = {
+        name = "GFX_spawn_suitable_male"
+        texturefile = "gfx\\interface\\spawn.dds"
+    }
+    spriteType = {
+        name = "GFX_spawn_suitable_female"
+        texturefile = "gfx\\interface\\spawn.dds"
+    }
+    spriteType = {
+        name = "GFX_spawn_councilor"
+        texturefile = "gfx\\interface\\spawn.dds"
+    }
+    spriteType = {
+        name = "GFX_spawn_lady_councilor"
+        texturefile = "gfx\\interface\\spawn.dds"
+    }
+    spriteType = {
+        name = "GFX_spawn_evil"
+        texturefile = "gfx\\interface\\spawn.dds"
+    }
+    spriteType = {
+        name = "GFX_convert_to_norse_pagan"
+        texturefile = "gfx\\interface\\convert.dds"
+    }
+    spriteType = {
+        name = "GFX_convert_to_catholic"
+        texturefile = "gfx\\interface\\convert.dds"
+    }
+}

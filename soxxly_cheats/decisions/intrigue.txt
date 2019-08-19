@@ -1,0 +1,331 @@
+decisions = {
+
+    receive_investment = {
+        is_high_prio = yes
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        allow = { always = yes }
+        potential = {
+            ai = no
+            NOT = { has_character_flag = received_one_time_investment }
+        }
+        effect = {
+            set_character_flag = received_one_time_investment
+            wealth = 7500
+        }
+    }
+
+    upgrade_to_feudal = {
+        is_high_prio = yes
+        potential = {
+            ai = no
+            NOT = { government = feudal_government }
+        }
+        allow = { always = yes }
+        effect = {
+            set_government_type = feudal_government
+        }
+    }
+
+    refresh_government = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = { prestige > 250 }
+        effect = {
+            prestige = -250
+            hidden_tooltip = {
+                any_demesne_title = {
+                    gender_succ = true_cognatic
+                    succession = primogeniture
+                }
+                any_title_under = {
+                    gender_succ = true_cognatic
+                    succession = primogeniture
+                }
+                any_direct_de_jure_vassal_title = {
+                    gender_succ = true_cognatic
+                    succession = primogeniture
+                }
+            }
+        }
+    }
+
+    convert_realm = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = { piety > 500 }
+        effect = {
+            piety = -500
+            hidden_tooltip = {
+                any_realm_province = {
+                    religion = ROOT
+                }
+            }
+        }
+    }
+
+    piety_for_gold = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = {
+            ai = no
+            piety > 100
+            wealth < 25000
+        }
+        effect = {
+            piety = -100
+            wealth = 1000
+        }
+    }
+
+    prestige_for_gold = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = {
+            ai = no
+            prestige > 100
+            wealth < 25000
+            NOT = { any_vassal = { opinion < 0 } }
+        }
+        effect = {
+            prestige = -100
+            wealth = 1000
+        }
+    }
+
+    gold_for_piety = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = no
+        }
+        allow = {
+            ai = no
+            piety < 2500
+            wealth > 1000
+        }
+        effect = {
+            piety = 100
+            wealth = -1000
+        }
+    }
+
+    gold_for_prestige = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = {
+            ai = no
+            prestige < 2500
+            wealth > 1000
+        }
+        effect = {
+            prestige = 100
+            wealth = -1000
+        }
+    }
+
+    gold_for_society = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = no
+            is_in_society = yes
+        }
+        allow = {
+            ai = no
+            wealth > 1000
+        }
+        effect = {
+            change_society_currency = 250
+            wealth = -1000
+        }
+    }
+
+    spawn_suitable_male = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = { wealth > 250 }
+        effect = {
+            wealth = -250
+            create_character = {
+                random_traits = no
+                religion = ROOT
+                culture = ROOT
+                race = ROOT
+                female = no
+                age = 21
+                attributes = {
+                    martial = 20
+                    diplomacy = 20
+                    stewardship = 20
+                    intrigue = 20
+                    learning = 20
+                }
+            }
+        }
+    }
+
+    spawn_suitable_female = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = { wealth > 250 }
+        effect = {
+            wealth = -250
+            create_character = {
+                random_traits = no
+                religion = ROOT
+                culture = ROOT
+                race = ROOT
+                female = yes
+                age = 18
+                attributes = {
+                    martial = 20
+                    diplomacy = 20
+                    stewardship = 20
+                    intrigue = 20
+                    learning = 20
+                }
+            }
+        }
+    }
+
+    spawn_councilor = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = {
+            wealth > 350
+            prestige > 25
+        }
+        effect = {
+            wealth = -350
+            prestige = -25
+            create_character = {
+                random_traits = no
+                religion = ROOT
+                culture = ROOT
+                race = ROOT
+                female = no
+                age = 35
+                attributes = {
+                    martial = 75
+                    diplomacy = 75
+                    stewardship = 75
+                    intrigue = 75
+                    learning = 75
+                }
+            }
+        }
+    }
+
+    spawn_lady_councilor = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = {
+            wealth > 350
+            prestige > 25
+        }
+        effect = {
+            wealth = -350
+            prestige = -25
+            create_character = {
+                random_traits = no
+                religion = ROOT
+                culture = ROOT
+                race = ROOT
+                female = yes
+                age = 35
+                attributes = {
+                    martial = 75
+                    diplomacy = 75
+                    stewardship = 75
+                    intrigue = 75
+                    learning = 75
+                }
+            }
+        }
+    }
+
+    spawn_evil = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = {
+            wealth > 350
+            prestige > 25
+            piety > 50
+        }
+        effect = {
+            wealth = -350
+            prestige = -25
+            piety = -50
+            create_character = {
+                random_traits = no
+                religion = ROOT
+                culture = ROOT
+                race = ROOT
+                female = no
+                age = 24
+                attributes = {
+                    martial = 75
+                    diplomacy = 75
+                    stewardship = 75
+                    intrigue = 80
+                    learning = 75
+                }
+                trait = elusive_shadow
+                trait = soxxly_psycho
+                trait = greedy
+                trait = proud
+            }
+        }
+    }
+
+    convert_to_norse_pagan = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = {
+            piety > 500
+            prestige > 150
+        }
+        effect = {
+            piety = -500
+            prestige = -150
+            religion = norse_pagan
+            hidden_tooltip = {
+                any_realm_province = {
+                    religion = norse_pagan
+                }
+            }
+        }
+    }
+
+    convert_to_catholic = {
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        potential = { ai = no }
+        allow = {
+            piety > 500
+            prestige > 150
+        }
+        effect = {
+            piety = -500
+            prestige = -150
+            religion = catholic
+            hidden_tooltip = {
+                any_realm_province = {
+                    religion = catholic
+                }
+            }
+        }
+    }
+}

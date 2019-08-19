@@ -1,0 +1,1004 @@
+targetted_decisions = {
+
+    remove_nickname = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = { has_nickname = yes }
+        allow = { always = yes }
+        effect = {
+            remove_nickname = yes
+        }
+    }
+
+    heal_them = {
+        filter = all
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = yes
+            OR = {
+                trait = depressed
+                trait = incapable
+                trait = infirm
+                trait = lunatic
+                trait = maimed
+                trait = possessed
+                trait = stressed
+                trait = wounded
+                trait = has_aztec_disease
+                trait = has_typhus
+                trait = cancer
+                trait = has_tuberculosis
+                trait = dancing_plague
+                trait = dysentery
+                trait = flu
+                trait = food_poisoning
+                trait = gout
+                trait = syphilitic
+                trait = has_typhoid_fever
+                trait = ill
+                trait = leper
+                trait = has_measles
+                trait = pneumonic
+                trait = rabies
+                trait = scurvy
+                trait = sickly
+                trait = has_small_pox
+                trait = has_bubonic_plague
+                trait = abdominal_pain
+                trait = chest_pain
+                trait = cough
+                trait = cramps
+                trait = diarrhea
+                trait = fatigue
+                trait = fever
+                trait = headache
+                trait = infection
+                trait = malaise
+                trait = rash
+                trait = vomiting
+                trait = disfigured
+                trait = mangled
+                trait = severely_injured
+                trait = is_fat
+                trait = is_malnourished
+                trait = celibate
+                trait = lustful
+                trait = gluttonous
+                trait = greedy
+                trait = slothful
+                trait = wroth
+                trait = envious
+                trait = proud
+                trait = ambitious
+                trait = arbitrary
+                trait = craven
+                trait = cruel
+                trait = cynical
+                trait = deceitful
+                trait = paranoid
+                trait = shy
+                trait = stubborn
+                trait = lovers_pox
+                trait = sick_incapable
+            }
+        }
+        allow = { FROM = { wealth > 100 } }
+        effect = {
+            FROM = { wealth = -100 }
+            hidden_tooltip = {
+                ROOT = {
+                    remove_trait = depressed
+                    remove_trait = incapable
+                    remove_trait = infirm
+                    remove_trait = lunatic
+                    remove_trait = maimed
+                    remove_trait = possessed
+                    remove_trait = stressed
+                    remove_trait = wounded
+                    remove_trait = has_aztec_disease
+                    remove_trait = has_typhus
+                    remove_trait = cancer
+                    remove_trait = has_tuberculosis
+                    remove_trait = dancing_plague
+                    remove_trait = dysentery
+                    remove_trait = flu
+                    remove_trait = food_poisoning
+                    remove_trait = gout
+                    remove_trait = syphilitic
+                    remove_trait = has_typhoid_fever
+                    remove_trait = ill
+                    remove_trait = leper
+                    remove_trait = has_measles
+                    remove_trait = pneumonic
+                    remove_trait = rabies
+                    remove_trait = scurvy
+                    remove_trait = sickly
+                    remove_trait = has_small_pox
+                    remove_trait = has_bubonic_plague
+                    remove_trait = abdominal_pain
+                    remove_trait = chest_pain
+                    remove_trait = cough
+                    remove_trait = cramps
+                    remove_trait = diarrhea
+                    remove_trait = fatigue
+                    remove_trait = fever
+                    remove_trait = headache
+                    remove_trait = infection
+                    remove_trait = malaise
+                    remove_trait = rash
+                    remove_trait = vomiting
+                    remove_trait = disfigured
+                    remove_trait = mangled
+                    remove_trait = severely_injured
+                    remove_trait = is_fat
+                    remove_trait = is_malnourished
+                    remove_trait = celibate
+                    remove_trait = lustful
+                    remove_trait = gluttonous
+                    remove_trait = greedy
+                    remove_trait = slothful
+                    remove_trait = wroth
+                    remove_trait = envious
+                    remove_trait = proud
+                    remove_trait = ambitious
+                    remove_trait = arbitrary
+                    remove_trait = craven
+                    remove_trait = cruel
+                    remove_trait = cynical
+                    remove_trait = deceitful
+                    remove_trait = paranoid
+                    remove_trait = shy
+                    remove_trait = stubborn
+                    remove_trait = lovers_pox
+                    remove_trait = sick_incapable
+                }
+            }
+        }
+    }
+
+    heal_me = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            OR = {
+                trait = depressed
+                trait = incapable
+                trait = infirm
+                trait = lunatic
+                trait = maimed
+                trait = possessed
+                trait = stressed
+                trait = wounded
+                trait = has_aztec_disease
+                trait = has_typhus
+                trait = cancer
+                trait = has_tuberculosis
+                trait = dancing_plague
+                trait = dysentery
+                trait = flu
+                trait = food_poisoning
+                trait = gout
+                trait = syphilitic
+                trait = has_typhoid_fever
+                trait = ill
+                trait = leper
+                trait = has_measles
+                trait = pneumonic
+                trait = rabies
+                trait = scurvy
+                trait = sickly
+                trait = has_small_pox
+                trait = has_bubonic_plague
+                trait = abdominal_pain
+                trait = chest_pain
+                trait = cough
+                trait = cramps
+                trait = diarrhea
+                trait = fatigue
+                trait = fever
+                trait = headache
+                trait = infection
+                trait = malaise
+                trait = rash
+                trait = vomiting
+                trait = disfigured
+                trait = mangled
+                trait = severely_injured
+                trait = is_fat
+                trait = is_malnourished
+                trait = celibate
+                trait = lustful
+                trait = gluttonous
+                trait = greedy
+                trait = slothful
+                trait = wroth
+                trait = envious
+                trait = proud
+                trait = ambitious
+                trait = arbitrary
+                trait = craven
+                trait = cruel
+                trait = cynical
+                trait = deceitful
+                trait = paranoid
+                trait = shy
+                trait = stubborn
+                trait = lovers_pox
+                trait = sick_incapable
+            }
+        }
+        allow = { wealth > 100 }
+        effect = {
+            wealth = -100
+            hidden_tooltip = {
+                remove_trait = depressed
+                remove_trait = incapable
+                remove_trait = infirm
+                remove_trait = lunatic
+                remove_trait = maimed
+                remove_trait = possessed
+                remove_trait = stressed
+                remove_trait = wounded
+                remove_trait = has_aztec_disease
+                remove_trait = has_typhus
+                remove_trait = cancer
+                remove_trait = has_tuberculosis
+                remove_trait = dancing_plague
+                remove_trait = dysentery
+                remove_trait = flu
+                remove_trait = food_poisoning
+                remove_trait = gout
+                remove_trait = syphilitic
+                remove_trait = has_typhoid_fever
+                remove_trait = ill
+                remove_trait = leper
+                remove_trait = has_measles
+                remove_trait = pneumonic
+                remove_trait = rabies
+                remove_trait = scurvy
+                remove_trait = sickly
+                remove_trait = has_small_pox
+                remove_trait = has_bubonic_plague
+                remove_trait = abdominal_pain
+                remove_trait = chest_pain
+                remove_trait = cough
+                remove_trait = cramps
+                remove_trait = diarrhea
+                remove_trait = fatigue
+                remove_trait = fever
+                remove_trait = headache
+                remove_trait = infection
+                remove_trait = malaise
+                remove_trait = rash
+                remove_trait = vomiting
+                remove_trait = disfigured
+                remove_trait = mangled
+                remove_trait = severely_injured
+                remove_trait = is_fat
+                remove_trait = is_malnourished
+                remove_trait = celibate
+                remove_trait = lustful
+                remove_trait = gluttonous
+                remove_trait = greedy
+                remove_trait = slothful
+                remove_trait = wroth
+                remove_trait = envious
+                remove_trait = proud
+                remove_trait = ambitious
+                remove_trait = arbitrary
+                remove_trait = craven
+                remove_trait = cruel
+                remove_trait = cynical
+                remove_trait = deceitful
+                remove_trait = paranoid
+                remove_trait = shy
+                remove_trait = stubborn
+                remove_trait = lovers_pox
+                remove_trait = sick_incapable
+            }
+        }
+    }
+
+    convert_their_religion = {
+        filter = all
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = {
+            ai = no
+            piety > 100
+        }
+        potential = {
+            ai = yes
+            NOT = { religion = FROM }
+        }
+        allow = {
+            FROM = { piety > 100 }
+        }
+        effect = {
+            FROM = { piety = -100 }
+            piety = 100
+            religion = FROM
+        }
+    }
+
+    make_a_vassal = {
+        filter = all
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = yes
+            is_ruler = yes
+            higher_real_tier_than = BARON
+            NOT = { vassal_of = FROM }
+        }
+        allow = { FROM = { wealth > 250 } }
+        effect = {
+            FROM = { wealth = -250 }
+            wealth = 250
+            set_defacto_liege = FROM
+        }
+    }
+
+    germinate = {
+        filter = all
+        from_potential = {
+            ai = no
+            age >= 16
+            age < 45
+            is_pregnant = no
+        }
+        potential = {
+            ai = yes
+            age >= 16
+            age < 45
+            NOT = { same_sex = FROM }
+            is_pregnant = no
+        }
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        allow = { always = yes }
+        effect = { impregnate = FROM }
+    }
+
+    make_gay = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            NOT = { trait = homosexual }
+        }
+        allow = {
+            NOT = { trait = homosexual }
+        }
+        effect = {
+            FROM = {
+                add_trait = homosexual
+            }
+        }
+    }
+
+    remove_gay = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            trait = homosexual
+        }
+        allow = {
+            trait = homosexual
+        }
+        effect = { FROM = { remove_trait = homosexual } }
+    }
+
+    make_saintly = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no  }
+        potential = { ai = no }
+        allow = { always = yes }
+        effect = {
+            hidden_tooltip = {
+                add_trait = chaste
+                add_trait = zeal
+                add_trait = temperate
+                add_trait = charitable
+                add_trait = diligent
+                add_trait = patient
+                add_trait = kind
+                add_trait = humble
+                add_trait = soxxly_esteemed
+                add_trait = theologian
+                remove_trait = soxxly_psycho
+                remove_trait = soxxly_beloved
+                remove_trait = lustful
+                remove_trait = gluttonous
+                remove_trait = greedy
+                remove_trait = slothful
+                remove_trait = wroth
+                remove_trait = envious
+                remove_trait = proud
+                remove_trait = lunatic
+                remove_trait = possessed
+                remove_trait = socializer
+            }
+        }
+    }
+
+    make_sinful = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no  }
+        potential = { ai = no }
+        allow = { always = yes }
+        effect = {
+            hidden_tooltip = {
+                remove_trait = chaste
+                remove_trait = zeal
+                remove_trait = temperate
+                remove_trait = charitable
+                remove_trait = diligent
+                remove_trait = patient
+                remove_trait = kind
+                remove_trait = humble
+                remove_trait = soxxly_esteemed
+                remove_trait = soxxly_beloved
+                remove_trait = theologian
+                add_trait = soxxly_psycho
+                add_trait = lustful
+                add_trait = gluttonous
+                add_trait = greedy
+                add_trait = slothful
+                add_trait = wroth
+                add_trait = envious
+                add_trait = proud
+                add_trait = lunatic
+                add_trait = possessed
+                add_trait = socializer
+            }
+        }
+    }
+
+    improve_skills = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = {
+            ai = no
+        }
+        potential = {
+            ai = no
+        }
+        allow = { wealth > 500 }
+        effect = {
+            wealth = -500
+            change_martial = 75
+            change_diplomacy = 75
+            change_stewardship = 85
+            change_intrigue = 75
+            change_learning = 75
+        }
+    }
+
+    edumacate_them = {
+        filter = all
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = { ai = yes }
+        allow = { FROM = { wealth > 250 } }
+        effect = {
+            FROM = { wealth = -250 }
+            change_martial = 75
+            change_diplomacy = 75
+            change_stewardship = 85
+            change_intrigue = 75
+            change_learning = 75
+        }
+    }
+
+    improve_genetics = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = {
+            ai = no
+            OR = {
+                NOT = { trait = genius }
+                NOT = { trait = fair }
+                NOT = { trait = strong }
+                trait = clubfooted
+                trait = dwarf
+                trait = giant
+                trait = harelip
+                trait = hunchback
+                trait = imbecile
+                trait = inbred
+                trait = lisp
+                trait = slow
+                trait = stutter
+                trait = ugly
+                trait = weak
+            }
+        }
+        potential = {
+            ai = no
+            OR = {
+                NOT = { trait = genius }
+                NOT = { trait = fair }
+                NOT = { trait = strong }
+                trait = clubfooted
+                trait = dwarf
+                trait = giant
+                trait = harelip
+                trait = hunchback
+                trait = imbecile
+                trait = inbred
+                trait = lisp
+                trait = slow
+                trait = stutter
+                trait = ugly
+                trait = weak
+            }
+        }
+        allow = { always = yes }
+        effect = {
+            ROOT = {
+                hidden_tooltip = {
+                    add_trait = genius
+                    add_trait = fair
+                    add_trait = strong
+                    remove_trait = clubfooted
+                    remove_trait = dwarf
+                    remove_trait = giant
+                    remove_trait = harelip
+                    remove_trait = hunchback
+                    remove_trait = imbecile
+                    remove_trait = inbred
+                    remove_trait = lisp
+                    remove_trait = slow
+                    remove_trait = stutter
+                    remove_trait = ugly
+                    remove_trait = weak
+                }
+            }
+        }
+    }
+
+    improve_their_genetics = {
+        filter = all
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            OR = {
+                NOT = { trait = genius }
+                NOT = { trait = fair }
+                NOT = { trait = strong }
+                trait = clubfooted
+                trait = dwarf
+                trait = giant
+                trait = harelip
+                trait = hunchback
+                trait = imbecile
+                trait = inbred
+                trait = lisp
+                trait = slow
+                trait = stutter
+                trait = ugly
+                trait = weak
+            }
+        }
+        allow = { always = yes }
+        effect = {
+            hidden_tooltip = {
+                add_trait = genius
+                add_trait = fair
+                add_trait = strong
+                remove_trait = clubfooted
+                remove_trait = dwarf
+                remove_trait = giant
+                remove_trait = harelip
+                remove_trait = hunchback
+                remove_trait = imbecile
+                remove_trait = inbred
+                remove_trait = lisp
+                remove_trait = slow
+                remove_trait = stutter
+                remove_trait = ugly
+                remove_trait = weak
+            }
+        }
+    }
+
+    free_from_prison = {
+        filter = all
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = {
+            ai = no
+        }
+        potential = {
+            ai = yes
+            prisoner = yes
+        }
+        allow = {
+            prisoner = yes
+            FROM = {
+                wealth > 250
+            }
+        }
+        effect = {
+            FROM = {
+                wealth = -250
+            }
+            imprison = no
+        }
+    }
+
+    add_psycho = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            NOT = { trait = soxxly_psycho }
+        }
+        allow = {
+            NOT = { trait = soxxly_psycho }
+        }
+        effect = {
+            FROM = {
+                remove_trait = soxxly_esteemed
+                remove_trait = soxxly_beloved
+                add_trait = soxxly_psycho
+            }
+        }
+    }
+
+    remove_psycho = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            trait = soxxly_psycho
+        }
+        allow = {
+            trait = soxxly_psycho
+        }
+        effect = { FROM = { remove_trait = soxxly_psycho } }
+    }
+
+    make_them_psycho = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            NOT = { trait = soxxly_psycho }
+        }
+        allow = {
+            NOT = { trait = soxxly_psycho }
+        }
+        effect = {
+            ROOT = {
+                remove_trait = soxxly_beloved
+                remove_trait = soxxly_esteemed
+                add_trait = soxxly_psycho
+            }
+        }
+    }
+
+    remove_psycho_from_them = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            trait = soxxly_psycho
+        }
+        allow = { trait = soxxly_psycho }
+        effect = { ROOT = { remove_trait = soxxly_psycho } }
+    }
+
+    make_esteemed = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            NOT = { trait = soxxly_esteemed }
+        }
+        allow = {
+            NOT = { trait = soxxly_esteemed }
+        }
+        effect = {
+            FROM = {
+                remove_trait = soxxly_psycho
+                remove_trait = soxxly_beloved
+                add_trait = soxxly_esteemed
+            }
+        }
+    }
+
+    remove_esteemed = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            trait = soxxly_esteemed
+        }
+        allow = {
+            trait = soxxly_esteemed
+        }
+        effect = { FROM = { remove_trait = soxxly_esteemed } }
+    }
+
+    make_them_esteemed = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            NOT = { trait = soxxly_esteemed }
+        }
+        allow = {
+            NOT = { trait = soxxly_esteemed }
+        }
+        effect = {
+            ROOT = {
+                remove_trait = soxxly_beloved
+                remove_trait = soxxly_psycho
+                add_trait = soxxly_esteemed
+            }
+        }
+    }
+
+    remove_esteemed_from_them = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            trait = soxxly_esteemed
+        }
+        allow = { trait = soxxly_esteemed }
+        effect = { ROOT = { remove_trait = soxxly_esteemed } }
+    }
+
+    make_blessed = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            NOT = { trait = soxxly_blessed }
+        }
+        allow = {
+            NOT = { trait = soxxly_blessed }
+        }
+        effect = {
+            FROM = {
+                remove_trait = soxxly_psycho
+                add_trait = soxxly_blessed
+            }
+        }
+    }
+
+    remove_blessed = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = { ai = no }
+        potential = {
+            ai = no
+            trait = soxxly_blessed
+        }
+        allow = {
+            trait = soxxly_blessed
+        }
+        effect = { FROM = { remove_trait = soxxly_blessed } }
+    }
+
+    make_them_blessed = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            NOT = { trait = soxxly_blessed }
+        }
+        allow = {
+            NOT = { trait = soxxly_blessed }
+        }
+        effect = {
+            ROOT = {
+                remove_trait = soxxly_psycho
+                add_trait = soxxly_blessed
+            }
+        }
+    }
+
+    remove_blessed_from_them = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            trait = soxxly_blessed
+        }
+        allow = { trait = soxxly_blessed }
+        effect = { ROOT = { remove_trait = soxxly_blessed } }
+    }
+
+    make_them_beloved = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            NOT = { trait = soxxly_beloved }
+        }
+        allow = {
+            NOT = { trait = soxxly_beloved }
+        }
+        effect = {
+            ROOT = {
+                remove_trait = soxxly_psycho
+                remove_trait = soxxly_esteemed
+                add_trait = soxxly_beloved
+            }
+        }
+    }
+
+    remove_beloved_from_them = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            trait = soxxly_beloved
+        }
+        allow = { trait = soxxly_beloved }
+        effect = { ROOT = { remove_trait = soxxly_beloved } }
+    }
+
+    make_them_fertile = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            trait = soxxly_infertile
+        }
+        allow = { trait = soxxly_infertile }
+        effect = { ROOT = { remove_trait = soxxly_infertile } }
+    }
+
+    make_them_infertile = {
+        filter = all
+        from_potential = { ai = no }
+        ai_will_do = { factor = 0 }
+        potential = {
+            ai = yes
+            age >= 16
+            NOT = { trait = soxxly_infertile }
+        }
+        allow = {
+            age >= 16
+            NOT = { trait = soxxly_infertile }
+        }
+        effect = { ROOT = { add_trait = soxxly_infertile } }
+    }
+
+    lock_away = {
+        filter = all
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = {
+            ai = no
+        }
+        potential = {
+            ai = yes
+            prisoner = no
+        }
+        allow = {
+            FROM = { prestige > 100 }
+            prisoner = no
+        }
+        effect = {
+            FROM = { prestige = -100 }
+            imprison = FROM
+        }
+    }
+
+    arrange_known_murder = {
+        filter = all
+        ai_will_do = { factor = 0 }
+        from_potential = {
+            ai = no
+            age >= 16
+        }
+        potential = {
+            ai = yes
+            age >= 16
+        }
+        allow = {
+            FROM = {
+                wealth > 100
+                prestige > 50
+                piety > 50
+            }
+        }
+        effect = {
+            FROM = {
+                wealth = -100
+                prestige = -50
+                piety = -50
+            }
+            death = {
+                death_reason = death_murder_fall
+                killer = FROM
+            }
+        }
+    }
+
+    make_disappear = {
+        filter = all
+        ai_will_do = { factor = 0 }
+        from_potential = {
+            ai = no
+            age >= 16
+        }
+        potential = {
+            ai = yes
+        }
+        allow = {
+            FROM = {
+                wealth > 500
+            }
+        }
+        effect = {
+            FROM = { wealth = -500 }
+            death = { death_reason = death_vanished }
+        }
+    }
+
+    death_becomes_you = {
+        filter = self
+        revoke_allowed = { always = no }
+        ai_will_do = { factor = 0 }
+        from_potential = {
+            ai = no
+            age > 30
+        }
+        potential = {
+            ai = no
+        }
+        allow = { prestige > 1000 }
+        effect = {
+            prestige = -500
+            death = { death_reason = death_natural }
+        }
+    }
+}

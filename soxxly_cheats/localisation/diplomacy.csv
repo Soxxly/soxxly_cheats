@@ -1,0 +1,104 @@
+remove_nickname;Remove My Nickname;;;;;;;;;;;;;x
+remove_nickname_desc;As an esteemed ruler, you can strike your nickname from the history books.;;;;;;;;;;;;;x
+
+heal_them;Heal Afflictions;;;;;;;;;;;;;x
+heal_them_desc;Remove the troubles which afflict this person.;;;;;;;;;;;;;x
+
+heal_me;Heal Afflictions;;;;;;;;;;;;;x
+heal_me_desc;Remove the troubles which afflict you.;;;;;;;;;;;;;x
+
+convert_their_religion;Force Religious Conversion;;;;;;;;;;;;;x
+convert_their_religion_desc;This person converts to your religion.;;;;;;;;;;;;;x
+
+make_a_vassal;Force Into Vassal;;;;;;;;;;;;;x
+make_a_vassal_desc;This person becomes your vassal and their land becomes part of your realm.;;;;;;;;;;;;;x
+
+germinate;Get Pregnant;;;;;;;;;;;;;x
+germinate_desc;You and this person will have a baby.;;;;;;;;;;;;;x
+
+make_gay;Change Your Sexuality;;;;;;;;;;;;;x
+make_gay_desc;You gain the Homosexual trait.;;;;;;;;;;;;;x
+
+remove_gay;Change Your Sexuality;;;;;;;;;;;;;x
+remove_gay_desc;You lose the Homosexual trait.;;;;;;;;;;;;;x
+
+make_saintly;Receive Divine Inspiration;;;;;;;;;;;;;x
+make_saintly_desc;Gain the 7 virtuous traits.;;;;;;;;;;;;;x
+
+make_sinful;Indulge the Flesh;;;;;;;;;;;;;x
+make_sinful_desc;Gain the 7 sinful traits.;;;;;;;;;;;;;x
+
+improve_skills;Educate;;;;;;;;;;;;;x
+improve_skills_desc;Send for scholars in order to educate yourself.;;;;;;;;;;;;;x
+
+edumacate_them;Educate;;;;;;;;;;;;;x
+edumacate_them_desc;Send this person to be educated.;;;;;;;;;;;;;x
+
+improve_genetics;Improve Genetics;;;;;;;;;;;;;x
+improve_genetics_desc;Improve your inheritable traits.;;;;;;;;;;;;;x
+
+improve_their_genetics;Improve Genetics;;;;;;;;;;;;;x
+improve_their_genetics_desc;Improve their inheritable traits.;;;;;;;;;;;;;x
+
+free_from_prison;Free From Prison;;;;;;;;;;;;;x
+free_from_prison_desc;Free this person from prison.;;;;;;;;;;;;;x
+
+add_psycho;Add Psychopath Trait;;;;;;;;;;;;;x
+add_psycho_desc;You gain the Psychopath trait.;;;;;;;;;;;;;x
+
+make_them_psycho;Add Psychopath Trait;;;;;;;;;;;;;x
+make_them_psycho_desc;This person gains the Psychopath trait.;;;;;;;;;;;;;x
+
+remove_psycho;Remove Psychopath Trait;;;;;;;;;;;;;x
+remove_psycho_desc;You lose the Psychopath trait.;;;;;;;;;;;;;x
+
+remove_psycho_from_them;Remove Psychopath Trait;;;;;;;;;;;;;x
+remove_psycho_from_them_desc;This person loses the Psychopath trait.;;;;;;;;;;;;;x
+
+make_esteemed;Add Esteemed Trait;;;;;;;;;;;;;x
+make_esteemed_desc;You gain the Esteemed trait.;;;;;;;;;;;;;x
+
+make_them_esteemed;Add Esteemed Trait;;;;;;;;;;;;;x
+make_them_esteemed_desc;This person gains the Esteemed trait.;;;;;;;;;;;;;x
+
+remove_esteemed;Remove Esteemed Trait;;;;;;;;;;;;;x
+remove_esteemed_desc;You lose the Esteemed trait.;;;;;;;;;;;;;x
+
+remove_esteemed_from_them;Remove Esteemed Trait;;;;;;;;;;;;;x
+remove_esteemed_from_them_desc;This person loses the Esteemed trait.;;;;;;;;;;;;;x
+
+make_blessed;Add Blessed Trait;;;;;;;;;;;;;x
+make_blessed_desc;You gain the Blessed trait.;;;;;;;;;;;;;x
+
+make_them_blessed;Add Blessed Trait;;;;;;;;;;;;;x
+make_them_blessed_desc;This person gains the Blessed trait.;;;;;;;;;;;;;x
+
+remove_blessed;Remove Blessed Trait;;;;;;;;;;;;;x
+remove_blessed_desc;You lose the Blessed trait.;;;;;;;;;;;;;x
+
+remove_blessed_from_them;Remove Blessed Trait;;;;;;;;;;;;;x
+remove_blessed_from_them_desc;This person loses the Blessed trait.;;;;;;;;;;;;;x
+
+make_them_beloved;Add Beloved Trait;;;;;;;;;;;;;x
+make_them_beloved_desc;This person gains the Beloved trait.;;;;;;;;;;;;;x
+
+remove_beloved_from_them;Remove Beloved Trait;;;;;;;;;;;;;x
+remove_beloved_from_them_desc;This person loses the Beloved trait.;;;;;;;;;;;;;x
+
+make_them_infertile;Add Infertile Trait;;;;;;;;;;;;;x
+make_them_infertile_desc;This person gains the Infertile trait.;;;;;;;;;;;;;x
+
+make_them_fertile;Remove Infertile Trait;;;;;;;;;;;;;x
+make_them_fertile_desc;This person loses the Infertile trait.;;;;;;;;;;;;;x
+
+lock_away;Send to Dungeon;;;;;;;;;;;;;x
+lock_away_desc;Imprison this person.;;;;;;;;;;;;;x
+
+arrange_known_murder;Murder;;;;;;;;;;;;;x
+arrange_known_murder_desc;You murder this person.;;;;;;;;;;;;;x
+
+make_disappear;Vanish Them;;;;;;;;;;;;;x
+make_disappear_desc;This person vanishes without a trace.;;;;;;;;;;;;;x
+
+death_becomes_you;Die Peacefully;;;;;;;;;;;;;x
+death_becomes_you_desc;You die of natural causes.;;;;;;;;;;;;;x

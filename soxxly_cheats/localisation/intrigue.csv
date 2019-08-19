@@ -1,0 +1,47 @@
+upgrade_to_feudal;Upgrade To Feudal;;;;;;;;;;;;;x
+upgrade_to_feudal_desc;Upgrade your realm from Tribal to Feudal.;;;;;;;;;;;;;x
+
+receive_investment;Receive Inheritance;;;;;;;;;;;;;x
+receive_investment_desc;A distant relative has died and sent you an inheritance.;;;;;;;;;;;;;x
+
+refresh_government;Refresh Your Government;;;;;;;;;;;;;x
+refresh_government_desc;Force all titles to use Absolute Cognatic Primogeniture.;;;;;;;;;;;;;x
+
+convert_realm;Convert Your Realm;;;;;;;;;;;;;x
+convert_realm_desc;Convert your realm to your current religion.;;;;;;;;;;;;;x
+
+piety_for_gold;Turn Piety Into Gold;;;;;;;;;;;;;x
+piety_for_gold_desc;Convert your piety into gold.;;;;;;;;;;;;;x
+
+prestige_for_gold;Turn Prestige Into Gold;;;;;;;;;;;;;x
+prestige_for_gold_desc;Convert your prestige into gold.;;;;;;;;;;;;;x
+
+gold_for_piety;Purchase Piety;;;;;;;;;;;;;x
+gold_for_piety_desc;Spend gold to gain piety.;;;;;;;;;;;;;x
+
+gold_for_prestige;Purchase Prestige;;;;;;;;;;;;;x
+gold_for_prestige_desc;Spend gold to gain prestige.;;;;;;;;;;;;;x
+
+gold_for_society;Purchase Secret Society Points.;;;;;;;;;;;;;x
+gold_for_society_desc;Spend gold in exchange for society points.;;;;;;;;;;;;;x
+
+spawn_suitable_male;Summon a Low-born Nobleman to Court;;;;;;;;;;;;;x
+spawn_suitable_male_desc;An unmarried low-born Nobleman arrives at Court.;;;;;;;;;;;;;x
+
+spawn_suitable_female;Summon a Low-born Noblewoman to Court;;;;;;;;;;;;;x
+spawn_suitable_female_desc;An unmarried low-born Noblewoman arrives at Court.;;;;;;;;;;;;;x
+
+spawn_councilor;Summon a Male Councilor;;;;;;;;;;;;;x
+spawn_councilor_desc;A man arrives at court with skills suitable for your Council.;;;;;;;;;;;;;x
+
+spawn_lady_councilor;Summon a Female Councilor;;;;;;;;;;;;;x
+spawn_lady_councilor_desc;A woman arrives at court with skills suitable for your Council.;;;;;;;;;;;;;x
+
+spawn_evil;Spawn a Spymaster;;;;;;;;;;;;;x
+spawn_evil_desc;A man arrives at court with skills suitable to be your Spymaster.;;;;;;;;;;;;;x
+
+convert_to_norse_pagan;Convert to Germanic;;;;;;;;;;;;;x
+convert_to_norse_pagan_desc;Convert yourself and your realm to Germanic Pagan.;;;;;;;;;;;;;x
+
+convert_to_catholic;Convert to Catholic;;;;;;;;;;;;;x
+convert_to_catholic_desc;Convert yourself and your realm to Catholic.;;;;;;;;;;;;;x
